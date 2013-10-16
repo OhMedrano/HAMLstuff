@@ -1,0 +1,14 @@
+!!!
+ %html
+ 	%title Oh snap, it's time for that nap
+ 	%link{rel:'stylesheet', ahref:'to be decided', type:'text/css'}
+
+ 	%body
+ 		%nav
+ 			%ul.nav 
+ 			-["home","gallery","about","contacts"].each do |items|
+ 				%li 
+ 					%a{href:"/#{items}"}=items.lowercase
+
+ 		=yield
+
